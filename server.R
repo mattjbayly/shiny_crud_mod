@@ -4,9 +4,7 @@ server <- function(input, output, session) {
   # the Shiny application
   session$userData$email <- 'tycho.brahe@tychobra.com'
   session$userData$db_trigger <- reactiveVal(0)
-
-  callModule(
-    cars_table_module,
-    "cars_table"
-  )
+  
+  # Call the table server function
+  module_table_server("cars_table")
 }

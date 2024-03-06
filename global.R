@@ -21,8 +21,6 @@ shiny::onStop(function() {
 })
 
 
-
-
 # Turn off scientific notation
 options(scipen = 999)
 
