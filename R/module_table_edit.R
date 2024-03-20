@@ -189,7 +189,9 @@ module_table_edit_server <-
                        
                        out$created_at <- time_now
                        out$created_by <- session$userData$email
+                       
                      } else {
+                       
                        # Editing existing car
                        
                        out$created_at <- as.character(hold$created_at)
